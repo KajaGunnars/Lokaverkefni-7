@@ -1,0 +1,109 @@
+
+legend {
+	padding: auto .5rem;
+	font-weight: 600;
+}
+textarea,
+select,
+input {
+	padding: 6px 12px;
+	margin-bottom: .5rem;
+	background: var(--nc-bg-2);
+	color: var(--nc-tx-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+a button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	font-size: 1rem;
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	background: var(--vsl-bg);
+	color: var(--nc-tx-1);
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: var(--nc-tx-1);
+}
+
+a button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+	cursor: default;
+	opacity: .5;
+
+	cursor: not-allowed;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+input[type="date"],
+input[type="password"],
+textarea,
+select {
+	width: 100%;
+}
+
+textarea {
+	font-size: 1,2rem;
+}
+
+.kyn {
+	display: table-cell;
+	padding-right: 20px;
+}
+
+.button:focus,
+.button:enabled:hover,
+button:focus,
+button:enabled:hover,
+input[type="submit"]:focus,
+input[type="submit"]:enabled:hover,
+input[type="reset"]:focus,
+input[type="reset"]:enabled:hover,
+input[type="button"]:focus,
+input[type="button"]:enabled:hover {
+	background: var(--nc-lk-2);
+}
+legend{
+	padding: auto .5rem;
+	font-weight: 600;
+	font-size: 600;
+}
+
+::-webkit-calender-picker-indicator {
+	background-color: var(--val-bg);
+	padding: .2rem;
+	border-radius: 50%;
+}
+
+fieldset {
+	margin-top: 1rem;
+	padding: 1rem;
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+}
+
+fieldset section {
+	margin: 0;
+}
+
+@media screen and (min-width:48rem){
+	fieldset {
+		padding: 2rem;
+	}
+	
+}

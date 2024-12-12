@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Verkefni 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/spjallbox.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/kvikun.css">
+    <link rel="stylesheet" href="slides/slide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body>
+    <div class="menuBg" id="top">
+        <div><span class="icon-KG-logo"><span class="path1"></span><span class="path2"></span></span> Verkefni 4</div>
+        <input type="checkbox" id="inputMenu">
+        <label for="inputMenu" class="labelMenu"> &#9776; </label>
+        <nav class="topmenu">
+            <a href="#top"> <span class="icon-alien-svgrepo-com"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span> Forsíðan</a>
+            <a href="#harmon"><span class="icon-qrcode"></span> Harmonikkan</a>
+            <a href="#"> <span class="icon-home"></span> Where</a>
+            <a href="#"><span class="icon-alarm"></span> When</a>
+            <a href="#checkin"><span class="icon-cart"></span> Order</a>
+            <a href="#login"><span class="icon-user"></span> Login</a>
+        </nav>
+    </div>
+
+    <input type="checkbox" id="toggleChat">
+    <label for="toggleChat" class="help-button"><span class="icon-bubbles4"></span></label>
+    <div class="chatbox">
+        <h2>Spjallbox</h2>
+        <form action="takk.html" method="get">
+            <label for="name">Nafn</label>
+            <input type="text" id="name" placeholder="Name" required>
+            
+            <label for="email">Tölvupóstur</label>
+            <input type="email" id="email" placeholder="Email" required>
+            
+            <label for="message">Skilaboð</label>
+            <textarea id="message" placeholder="Message"></textarea>
+            
+            <button type="submit" class="send-button">Senda</button>
+        </form>
+    </div>
+
+    <header class="landing">
+        <section>
+            <img src="images/alien-svgrepo-com.svg" class="logo animate__animated animate__backInDown" width="180">
+            <h1>Stop coding non-structured web sites. <br> Let's do it right.</h1>
+        </section>
+        <section>
+            <img src="images/handlaginn-gaur.png">
+        </section>
+    </header>
+
+    <div class="bannerBg">
+        <section class="container">
+            <table>
+                <caption>Dagskrá í töflu sem aðlagast öllum skjástærðum</caption>
+                <thead>
+                    <tr>
+                        <th>WHO</th>
+                        <th>WHERE</th>
+                        <th>WHEN</th>
+                        <th>CHECK IN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="WHO">Yui Hirasawa</td>
+                        <td data-label="WHERE">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil cumque vitae dolorem quasi eum!</td>
+                        <td data-label="WHEN">13:00-20:00</td>
+                        <td data-label="CHECK IN" id="checkin">
+                            <button class="register-button shake">Register</button>
+                        </td>
+                    </tr>
+                    <!-- Additional rows -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <main>
+        <!-- Slides Section -->
+        <div class="example">
+            <div id="slideset1">
+                <div>Slide 1 Content</div>
+                <div>Slide 2 Content</div>
+                <div>Slide 3 Content</div>
+            </div>
+        </div>
+
+        <h3>Harmonikku Listi</h3>
+        <section class="col-2" id="harmon">
+            <article>
+                <!-- TAB 1 -->
+                <div class="a-tab">
+                    <input id="tab-1" name="tab-group" class="a-check" type="radio">
+                    <label for="tab-1" class="a-label"> Harmonikka 1</label>
+                    <div class="a-content">
+                        <p>Áherslutexti H5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis aut repellendus, explicabo quae natus velit sit rem quaerat quibusdam eum tempore, dolore possimus nihil tempora quod ad nesciunt eveniet?</p>
+                    </div>
+                </div>
+                <!-- TAB 2 -->
+                <div class="a-tab">
+                    <input id="tab-2" name="tab-group" class="a-check" type="radio">
+                    <label for="tab-2" class="a-label">Harmonikka 2</label>
+                    <div class="a-content">
+                        <h2>Undirfyrirsögn</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- TAB 3 -->
+                <div class="a-tab">
+                    <input id="tab-3" name="tab-group" class="a-check" type="radio">
+                    <label for="tab-3" class="a-label">Harmonikka 3</label>
+                    <div class="a-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="col-3">
+        <nav>
+            <ul>
+                <li>Eveniet ducimus pariatur voluptate</li>
+                <li>Vitae animi, sed provident fuga</li>
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+        </nav>
+        <dl>
+            <dt>Nafn</dt>
+            <dd>-Kaja Gunnarsdóttir</dd>
+            <dt>Tölvupóstur</dt>
+            <dd>Kajagunn@gmail.com</dd>
+        </dl>
+    </footer>
+</body>
+</html>

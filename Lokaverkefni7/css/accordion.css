@@ -1,0 +1,49 @@
+/* (A) HIDE CHECKBOX & CONTENT */
+.a-check { display: none; }
+.a-content { max-height: 0; overflow: hidden; }
+
+
+/* (B) SHOW CONTENT ON CHECKED */
+.a-check:checked ~ .a-content { max-height: 500px; overflow: auto; }
+.a-content { transition: all 0.5s; }
+
+/* (C) COSMETICS */
+/* (C1) WRAPPER 
+.a-tab { max-width: 600px; } */
+
+/* (C2) LABEL */
+.a-label {
+  position: relative;       /* Keeps the harmonikkulisti in place */
+  display: block; 
+  max-width: 100%; 
+  padding: .6rem;
+  font-weight: 700; 
+  cursor: pointer;
+  color: var(--nc-tx-2); 
+  background: rgb(233, 123, 123);
+}
+
+/* (C3) LABEL ARROW */
+.a-label { position: relative; }
+.a-label::after {
+  display: block; 
+  content: "\25b6";
+  position: absolute; 
+  right: .6rem; 
+  top: .6rem;
+  transition: all 0.4s;
+}
+.a-check:checked ~ label::after { transform: rotate(90deg); }
+
+/* (C4) CONTENT */
+.a-check:checked ~ .a-content {
+  padding: 10px;
+  background: rgb(253, 173, 97);
+}
+/* (C5) ENTIRE PAGE
+img { width: 100%; }
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+*/

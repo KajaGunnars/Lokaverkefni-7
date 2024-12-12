@@ -1,0 +1,64 @@
+.bannerBg {
+    background-color: rgb(190, 92, 85);
+    padding: 1rem;
+
+}
+.value, .center{
+    text-align: center;
+}
+.logo {
+    width: 10rem;
+}
+.value h1{
+    /*border: 1px solid var(--nc-bg-1);*/
+    border-radius: 50%;
+    margin: 1rem auto;
+    padding: 2.3rem 1rem;
+    width: 5rem;
+    background-color: var(--vsl-bg);
+}
+@media screen and (min-width:48rem){
+    header> :first-child{
+        margin-top: 2rem;
+        padding-top:0%;
+        text-align: center;
+    }
+    header> :last-child{
+        max-width: 80rem;
+        margin: 7rem 0 -2rem 0;
+    }
+}
+
+@media screen and (min-width:60rem){
+    header> :first-child{
+        margin-top: 4rem;
+        padding-top:0%;
+        text-align: center;
+    }
+    header> :last-child{
+        max-width: 80rem;
+        margin: 0 0 -2rem 0;
+    }
+    header h1{
+        font-size: 3rem;
+    }
+}
+/*IPAD*/
+@media screen and (min-width:48rem){
+    .landing {
+        vertical-align: bottom;
+    }
+}
+/*IPAD*/
+@media screen and (min-width:60rem){
+    .landing {
+        vertical-align: bottom;
+    }
+}
+.landing {
+    background-image: url('../images/Apex-Look.jpg'); /* Path adjusted to go up one directory from CSS folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px; /* Adjust the height as needed */
+}

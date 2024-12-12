@@ -1,0 +1,27 @@
+/* Define the animation */
+@keyframes moveDown {
+    0% {
+      transform: translateY(-15px); 
+      opacity: 1; 
+    }
+    40% {
+      transform: translateY(10px); 
+      opacity: 1; 
+    }
+    70% {
+      transform: translateY(10px);
+      opacity: 1; 
+    }
+    90% {
+      transform: translateY(0); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateY(0); 
+      opacity: 0; 
+    }
+  }
+  
+  .bannerBg .container table caption {
+    animation: moveDown 4s ease-in-out infinite; 
+  }

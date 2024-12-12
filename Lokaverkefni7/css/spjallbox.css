@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px; 
+    width: 300px;
+    padding: 20px;
+    background-color: var(--nc-ac-1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; 
+    color: var(--nc-bg-1);
+    z-index: 5;
+}
+
+#toggleChat:checked ~ .chatbox {
+    display: block; 
+}
+
+.chatbox h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.chatbox label {
+    font-size: 0.9em;
+    margin: 5px 0;
+    display: block;
+}
+
+.chatbox input,
+.chatbox textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.chatbox .send-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--val-bg);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: black;
+    cursor: pointer;
+}
+
+#toggleChat {
+    display: none;
+}
+
+.help-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--val-bg);
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    z-index: 9998; 
+}
+
+.chatbox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox .send-button:hover {
+    background-color: var(--val-bg-hover);
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="768"
+   height="768"
+   viewBox="0 0 203.2 203.2"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Verkefni4.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.62546775"
+     inkscape:cx="352.53616"
+     inkscape:cy="478.84163"
+     inkscape:window-width="1440"
+     inkscape:window-height="900"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="72.30072"
+       y="133.83325"
+       width="418.42119"
+       height="250.74505"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="M 100.98832,160.13915 H 86.361272 l -33.705773,-57.1293 -10.528635,13.37419 v 43.75511 H 30.538295 V 43.651507 H 42.126864 V 99.459912 L 86.361272,43.651507 h 13.35512 L 60.78163,92.855364 Z m 77.1629,-8.25568 q -12.22453,10.48471 -27.06355,10.48471 -19.43205,0 -29.46606,-15.35556 -10.034,-15.43812 -10.034,-45.076 0,-28.647217 9.6807,-44.58068 9.75135,-15.933465 29.81936,-15.933465 7.20752,0 14.27373,2.14648 7.06619,2.146472 11.37658,5.696416 l -3.81576,10.649833 q -9.96333,-6.604544 -21.83455,-6.604544 -13.70843,0 -20.49199,11.723063 -6.71288,11.723065 -6.71288,36.902897 0,48.54339 27.20487,48.54339 10.24598,0 15.47497,-5.03597 V 116.71428 H 148.6145 v -11.72307 h 29.53672 z"
+       id="text1"
+       style="-inkscape-font-specification:'Andale Mono';display:inline;stroke-width:0.837977"
+       aria-label="KG" />
+    <rect
+       style="fill:#000000;fill-opacity:0.274131;stroke:#000000;stroke-width:15.2657;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2"
+       width="188.2034"
+       height="190.53159"
+       x="7.9185829"
+       y="6.9878788"
+       sodipodi:insensitive="true" />
+  </g>
+</svg>

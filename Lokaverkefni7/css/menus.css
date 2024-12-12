@@ -1,0 +1,96 @@
+#inputMenu {
+    display: none; 
+}
+
+.labelMenu {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem; 
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--nc-tx-2);
+    border-radius: 4px; 
+    background-color: var(--table-bg); 
+    z-index: 10; 
+    text-align: center;
+    line-height: 1; 
+    cursor: pointer;
+}
+
+.topmenu {
+    position: fixed;
+    top: 3rem; 
+    right: -46rem; 
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 0, 0); 
+    width: 75%;
+    transition: all 0.5s ease-out; 
+    z-index: 9; 
+}
+
+.topmenu a {
+    display: block;
+    padding: 0.5rem 3rem;
+    color: var(--nc-tx-2); 
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid var(--nc-tx-2); 
+}
+
+#inputMenu:checked ~ .topmenu {
+    right: 3rem; 
+    transition: all 0.5s ease-in;
+}
+.menuBg p {
+    margin: 0;
+    padding: .4rem 2rem;
+    margin: 9;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.menuBg > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+  
+.icon-KG-logo {
+    margin-right: 15px; 
+    transform: scale(1.6); 
+}
+/*Viðmið*/
+@media screen and (min-width: 60rem) {
+    .menuBg {
+        display: grid;
+        flex-flow: row;
+        grid-template-columns: 1fr 5.25fr;
+        background-color: red;
+        margin: 0;
+    } 
+    .menuBg p {
+        background-color: transparent;
+    }
+    .topmenu {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .topmenu a {
+        border-bottom: 0; 
+    }
+    .labelMenu {
+        display: none; 
+    }
+}

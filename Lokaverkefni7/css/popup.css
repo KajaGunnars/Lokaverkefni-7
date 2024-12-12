@@ -1,0 +1,144 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+ }
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 99999;
+    }
+
+.popup {
+    margin: 5rem auto;
+    padding: 1.5rem;
+    background: var(--nc-bg-1);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2 {
+    margin-top: 0;
+    color: var(--nc-tx-1);
+}
+
+ .popup .close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    transition: all 200ms;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--nc-tx-1);
+}
+    
+.popup .close:hover {
+    color: var(--nc-lk-2);
+}
+    
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+/* Farsímaskjár - mobile */
+ @media screen and (max-width: 700px){
+    .popup{
+        width: 70%;
+    }
+}
+
+/* Overlay styling for the "Where" popup */
+#where.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#where.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 99999;
+}
+
+/* Popup box styling for the "Where" popup */
+#where .popup {
+    margin: 5rem auto;
+    padding: 1.5rem;
+    background: var(--nc-bg-1);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+#where .popup h2 {
+    margin-top: 0;
+    color: var(--nc-tx-1);
+}
+
+#where .popup .close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    transition: all 200ms;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--nc-tx-1);
+}
+
+#where .popup .close:hover {
+    color: var(--nc-lk-2);
+}
+
+#where .popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* Responsive adjustments for "Where" popup */
+@media screen and (max-width: 700px) {
+    #where .popup {
+        width: 70%;
+    }
+}
+/* Location box styling */
+.location-box {
+    padding: 1rem;
+    background-color: var(--nc-bg-1);
+    border: 1px solid var(--nc-tx-1);
+    border-radius: 5px;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Google Maps button styling */
+.google-maps-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--nc-lk-2);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.google-maps-button:hover {
+    background-color: var(--nc-lk-1);
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Lokaverkefni-7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/spjallbox.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/kvikun.css">
+    <link rel="stylesheet" href="slides/slide.css">
+    <link rel="stylesheet" href="slides/SlideIn.css">
+    <link rel="stylesheet" href="slides/SlideDown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body>
+    <div class="menuBg" id="top">
+      <div><span class="icon-KG-logo"><span class="path1"></span><span class="path2"></span></span> Apex Legends Championship </div>
+        <input type="checkbox" id="inputMenu">
+        <label for="inputMenu" class="labelMenu"> &#9776; </label>
+        <nav class="topmenu">
+          <a href="#top"> <span class="icon-alien-svgrepo-com"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span> Home Page</a>
+          <a href="#harmon"><span class="icon-qrcode"></span> Story</a>
+          <a href="#where"> <span class="icon-home"></span> Where</a>
+          <a href="#"><span class="icon-alarm"></span> When</a>
+          <a href="#checkin"><span class="icon-cart"></span> Order</a>
+          <a href="#login"><span class="icon-user"></span> Login</a>
+        </nav>
+      </div>
+    <input type="checkbox" id="toggleChat">
+    <label for="toggleChat" class="help-button"><span class="icon-bubbles4"></span></label>
+    <div class="chatbox">
+        <h2>Spjallbox</h2>
+        <form action="takk.html" method="get">
+            <label for="name">Nafn</label>
+            <input type="text" id="name" placeholder="Name" required>
+            
+            <label for="email">Tölvupóstur</label>
+            <input type="email" id="email" placeholder="Email" required>
+            
+            <label for="message">Skilaboð</label>
+            <textarea id="message" placeholder="Message"></textarea>
+            
+            <button type="submit" class="send-button">Senda</button>
+        </form>
+    </div>
+  <header class="landing">
+      <section>
+        <img src="images/apex-logo-F74B0C9FCD-seeklogo.com.png" class="logo animate__animated animate__backInDown" width="180" style="animation-delay: 0.5s;">
+      </section>
+      <section>
+
+      </section>
+  </header>
+  <!--banner-->
+  <div class="bannerBg">
+    <section class="container">
+      <table>
+        <caption class="caption">Book your seats! <span class="icon-alien-svgrepo-com"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>What is available!</caption>
+        <thead>
+            <tr>
+                <th>WHERE</th>
+                <th>WHERE</th>
+                <th>WHEN</th>
+                <th>CHECK IN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="WHO">General Admission</td>
+                <td data-label="WHERE">Unreserved seats or standing areas, usually in the upper tiers with less optimal views</td>
+                <td data-label="WHEN">$50</td>
+                <td data-label="CHECK IN" id="checkin">
+                  <button class="register-button shake">Book</button>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="WHO">Reserved Seating</td>
+                <td data-label="WHERE">Specifically priced seats in designated areas, varying from close-up to budget-friendly spots</td>
+                <td data-label="WHEN">$200</td>
+                <td data-label="CHECK IN">
+                  <button class="register-button shake">Book</button>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="WHO">Box Seats</td>
+                <td data-label="WHERE">Elevated, private seating areas along the sides with good views and some extra amenities</td>
+                <td data-label="WHEN">$500</td>
+                <td data-label="CHECK IN">
+                  <button class="register-button shake ">Book</button>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="WHO">VIP or Premium Seating</td>
+                <td data-label="WHERE"> High-cost, prime location seats with the best views and additional luxuries like lounge access</td>
+                <td data-label="WHEN">$1000</td>
+                <td data-label="CHECK IN">
+                  <button class="register-button shake">Book</button>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="WHO">Suites</td>
+                <td data-label="WHERE">Private rooms with group seating, overlooking the venue, equipped with exclusive amenities for comfort and privacy.</td>
+                <td data-label="WHEN">$2000</td>
+                <td data-label="CHECK IN">
+                  <button class="register-button shake">Book</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th><p></p></th>
+            <th>
+              Meeting with players in the suites package!
+            </th>
+            <th><p></p></th>
+            <th><p></p></th>
+        </tfoot>
+    </table>
+
+    </section>
+  </div>
+
+<br>
+<!-- Other Content -->
+  <p></p>
+  <main>
+
+    <section class="col-2" id="harmon">
+      <article>
+        <section>
+                <!-- Slides go here -->
+          <div class="example">
+            <div id="slideset1">
+              <img src="images/1345EAG-ALGS-Champ-Trophy-20.jpg" alt="Slide 1" />
+              <div>
+                <img src="images/apex-legends-algs-year4-split1-playoffs-result-01.webp" alt="Slide 2">
+              </div>
+              <div>
+                <img src="images/ImperialHal_at_Apex_Legends_Preseason_Invitational.webp" alt="Slide 3">
+              </div>
+            </div>
+          </div>
+            <h3>Harmonikku Listi</h3>
+        </section>
+        <section>
+          <!-- TAB 1 -->
+          <div class="a-tab">
+            <input id="tab-1" name="tab-group" class="a-check" type="radio">
+            <label for="tab-1" class="a-label"> Origins and Rise</label>
+            <div class="a-content">
+              <p><strong>Foundation:</strong> This part covers the inception of "Apex Legends" as a battle royale game by Respawn Entertainment and its explosive growth in popularity shortly after release in 2019. It explores the game's unique features, such as character abilities and team dynamics, which set it apart from other games in the genre. 
+                <br>
+                <br>
+                <strong>Development of Esports Scene:</strong> Detail the early days of competitive play, including the first unofficial tournaments and Respawn’s initial forays into organizing events. Highlight the community's role in pushing the game into the esports limelight. <br>
+                <br>
+                <br>
+                <strong>Establishment of Official Tournaments:</strong> Conclude with the announcement and launch of the Apex Legends Global Series, marking Respawn's commitment to establishing a lasting competitive scene..</p></div>
+          </div>
+          <br>
+          <!-- TAB 2 -->
+          <div class="a-tab">
+            <input id="tab-2" name="tab-group" class="a-check" type="radio">
+            <label for="tab-2" class="a-label">Evolution and Expansion</label>
+            <div class="a-content">
+              <p><strong>Growth of the Series:</strong> Discuss the expansion of the Global Series through increased funding, more extensive tournament structures, and the introduction of major and minor leagues. Highlight key moments and matches that captivated fans around the world.
+              <blockquote> "Apex Legends' growth from new release to esports powerhouse has been fueled by our passionate community. Every tournament showcases not just skill but the deep dedication of our players and fans." — Alex Mendez, Apex Legends Esports Director</blockquote></p>
+              <p><strong>Player Spotlight:</strong> Focus on significant players who have made a mark on the championship's history, detailing their backgrounds, play styles, and contributions to the esports community.</p>
+              <p><strong>Global Impact:</strong> Explain how "Apex Legends" esports began to influence global esports trends, including partnerships with major sponsors, integration with traditional sports brands, and its impact on streaming and media coverage.</p>    
+          </div>
+          <br>
+              <!-- TAB 3 -->
+          <div class="a-tab">
+            <input id="tab-3" name="tab-group" class="a-check" type="radio">
+            <label for="tab-3" class="a-label">Current Era and Future</label>
+            <div class="a-content">
+              <p><strong>Recent Championships</strong> Dive into the latest developments in the "Apex Legends" championship scene, covering recent winners, notable upsets, and the strategic evolutions within the game.</p>
+              <br>
+              <p><strong>Technological and Community Advances:</strong> Discuss how advances in gaming technology, changes in game mechanics, and community feedback have shaped the current state of the championships.</p>
+              <br>
+              <p><strong>Looking Forward:</strong> Speculate on the future of the "Apex Legends" esports scene, including upcoming changes announced by Respawn, potential shifts in player strategy, and the growing integration of esports into mainstream culture.</p>
+            </div>
+        </div>   
+        </section>
+      </article>
+      <section>
+        <form action="takk.html" method="get">
+          <fieldset>
+            <legend class="skraningarform">Skráningarform</legend>
+          <p><em>This is not a real form and does not submit or save any information.</em></p>
+          <form action="#" method="get">
+          <section class="col-2">
+          <p>
+              <label>First name</label><br>
+              <input type="text" name="first_name" required="" placeholder="">
+          </p>
+          <p>
+              <label>Last name</label><br>
+              <input type="text" name="last_name" required="" placeholder="">
+          </p>
+          </section>
+          <p>
+              <label>Gender</label><br>
+              <section class="col-3">
+                <label class="kyn">
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label>
+                <label class="kyn">
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+                <label class="kyn">
+                    <input type="radio" name="gender" value="other-none-na">
+                    Non-binary
+                </label>
+            </section>
+          </p>
+
+          <section class="col-2">
+          <p>
+              <label>Email</label><br>
+              <input type="email" name="email" required="@" placeholder="@gmail.com">
+          </p>
+          <p>
+              <label>Phone number</label><br>
+              <input type="tel" name="tel" pattern="^(\d{7}|\d{10})$" required="" placeholder="Digits Only">
+          </p>
+          </section>
+          <section class="col-3">
+          <p>
+            <label>Time</label>
+            <input type="time" name="time" />
+          </p>
+          <p>
+            <label>Day</label>
+            <input type="date" name="date"/>
+          </p>
+          <p>
+              <label>Country</label><br>
+              <select name="country">
+                  <option>China</option>
+                  <option>India</option>
+                  <option>United States</option>
+                  <option>Indonesia</option>
+                  <option>Brazil</option>
+                  <option value="Ísland">Iceland</option>
+              </select>
+          </p>
+        
+        </section>
+          <p>
+              <label>Comments</label><br>
+              <textarea></textarea>
+          </p>
+          <p>
+              <label>
+                  <input type="checkbox" value="terms">
+                  I agree to the <a>terms and conditions</a>
+              </label>
+          </p>
+          <p>
+            <button class="register-button">Sign up</button>
+              <!--<button type="reset">Reset form</button>-->
+              <button disabled="disabled">Disabled</button>
+          </p>
+        </fieldset>
+      </form>
+      </form>
+      </section>
+    </section>
+  </main>
+  <div style="text-align: center;"> <!-- Centers the video on the page -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/g8-I8qxznpM?si=ruZB3WDcRQh3m23E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <footer class="col-3">
+    <nav>
+      <h3 class="centered-title">Pro Players</h3>  <!-- Adding class for styling -->
+      <ul>
+        <li>Phillip "ImperialHal" Dosen</li>
+        <li>Mac "Albralelie" Beckwith</li>
+        <li>Coby "dizzy" Meadows</li>
+        <li>Jordan "Reps" Wolfe</li>
+      </ul>
+    </nav>
+    <nav>
+      <h3 class="centered-title">Pro Players</h3>  <!-- Adding class for styling -->
+      <ul>
+        <li>Brandon "aceu" Winn</li>
+        <li>Bowen "Monsoon" Fuller</li>
+        <li>Mandeep "TSMFTX ImperialHal</li>
+        <li>Matthew "Snip3down" Edwards</li>
+      </ul>
+    </nav>
+    <dl>     
+      <br>         <!--Description list -->
+      <dt>Nafn</dt>
+        <dd>-Kaja Gunnarsdóttir</dd>
+      <dt>Tölvupóstur</dt>
+        <dd>Kajagunn@gmail.com</dd>
+      <dt>Vefhönnun</dt>
+        <dd>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+    </dl>
+  </footer>
+    <p class="center">2 spönn, haust 2024.</p>
+    <!--pop up login form-->
+    <div id="login" class="overlay">
+      <div class="popup">
+          <h2>Welcome</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <form action="takk.html" method="get">
+              <fieldset>
+                  <legend>Login</legend>
+                  <p>User: <input type="text" required></p>
+                  <p>Password: <br> <input type="password" name="psw" required></p>
+                  <p><input type="submit" value="Login"></p>
+              </fieldset>
+          </form>
+          </div>
+      </div>
+  </div>
+  <div id="where" class="overlay">
+    <div class="popup">
+        <h2>Location Information</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <div class="location-box">
+                <p><strong>Location:</strong> PNC Arena, Raleigh, North Carolina</p>
+                <a href="https://www.google.com/maps?q=PNC+Arena,+Raleigh,+North+Carolina" target="_blank" class="google-maps-button">View on Google Maps</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>

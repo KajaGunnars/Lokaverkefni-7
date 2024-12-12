@@ -1,0 +1,19 @@
+/* Target only the slide-in image */
+.slide-in {
+    animation: slideIn 1s ease-out;
+    animation-fill-mode: forwards;
+    width: 500px; 
+    height: auto; 
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

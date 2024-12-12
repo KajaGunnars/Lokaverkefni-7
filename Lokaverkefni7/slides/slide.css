@@ -1,0 +1,81 @@
+#slideset1 {
+    width: 39em;             
+    height: 25em;             
+    overflow: hidden;         
+    position: relative;       
+    margin-left: -0.5em;         
+    margin-top: 20px;         
+    padding: 0.6rem;          
+    border: 2px solid #333;   
+    background-color: #fff;   
+}
+  /* Individual Slides */
+  #slideset1 > div {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;             
+    width: 100%;              
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #000;              
+    background-color: #fff;   
+    opacity: 0;               
+    z-index: 5;               
+  }
+  
+  /* Delays for Individual Slides */
+  #slideset1 > div:nth-child(1) {
+    animation: autoplay1 12s infinite 0s;
+  }
+  #slideset1 > div:nth-child(2) {
+    animation: autoplay1 12s infinite 4s;
+  }
+  #slideset1 > div:nth-child(3) {
+    animation: autoplay1 12s infinite 8s;
+  }
+  
+  /* Keyframes for Sliding and Fading In/Out */
+  @keyframes autoplay1 {
+    0%, 100% {
+      visibility: visible;
+      opacity: 1; 
+      top: 0;     
+    }
+    33.33% {
+      opacity: 0; 
+      visibility: hidden;
+      top: -100%;  
+    }
+    66.66% {
+      opacity: 0; 
+      visibility: hidden;
+      top: -100%;
+    }
+    100% {
+      opacity: 1; 
+      visibility: visible;
+      top: 0;     
+    }
+  }
+
+/* Add specific image styling to ensure it fits within the slide */
+#slideset1 img {
+  max-width: 100%;    
+  max-height: 100%;   
+  object-fit: cover;  
+}
+
+/* Delays for Individual Slides */
+#slideset1 > div:nth-child(1) {
+  animation: autoplay1 12s infinite 0s;
+}
+#slideset1 > div:nth-child(2) {
+  animation: autoplay1 12s infinite 4s;
+}
+#slideset1 > div:nth-child(3) {
+  animation: autoplay1 12s infinite 8s;
+}
